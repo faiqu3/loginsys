@@ -2,7 +2,7 @@
 session_start(); 
 include "db_conn.php";
 
-if (isset($_POST['uname']) && isset($_POST['password'])) {
+if (isset($_GET['uname']) && isset($_GET['password'])) {
 
 	function validate($data){
        $data = trim($data);
